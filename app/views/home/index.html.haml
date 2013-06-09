@@ -1,0 +1,30 @@
+%h1 Hello There!
+%p So, what is this?
+%p
+    This is a 
+    %a{:href=>'http://ofps.oreilly.com/titles/9780596518387/perpetual_learning.html#breakable_toys'}'breakable toy' 
+    app built on
+    %a{:href=>'http://www.rubyonrails.org'}rails 
+    that I'm using as a learning experiment with 
+    %a{:href=>'http://haml.info'}haml, 
+    %a{:href=>'http://www.sass-lang.com'}sass, 
+    %a{:href=>'http://twitter.github.io/bootstrap/'}bootstrap
+    and 
+    %a{:href=>'http://angularjs.org/'}angularJS.
+%p 
+    I also plan to try integrating some APIs like 
+    %a{:href=>'http://www.meetup.com/meetup_api/'}meetup.com 
+    or something.
+%p I hope you don't expect this to look polished anytime soon.
+
+%h2 Angular Demo:
+%label Name: 
+%input(type='text' ng-model='yourName' placeholder='Your Name Here')
+%hr
+%p 
+    Hello {{yourName}}!
+%h2 Events:
+%div(ng-controller='HomeContrllr')
+    %ul
+        %li(ng-repeat='evnt in events')
+            {{evnt.name}} - {{evnt.host}}
