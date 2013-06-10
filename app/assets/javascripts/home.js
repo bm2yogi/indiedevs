@@ -1,5 +1,5 @@
 function HomeContrllr($scope){
-    $scope.evnts = [
+    $scope.events = [
         {name:'Kickoff',host:'bm2yogi'},
         {name:'Barbecue',host:'phil'} ];
 }
