@@ -20,11 +20,17 @@
 %h2 Angular Demo:
 %label Name: 
 %input(type='text' ng-model='yourName' placeholder='Your Name Here')
-%hr
 %p 
     Hello {{yourName}}!
+%hr
 %h2 Events:
-%div(ng-controller='HomeContrllr')
+%div(ng-controller="HomeContrllr")
+    EventCount: {{magicNumber}}
+    %div
+        %a(href="" ng-click="incr()") Add
+        %a(href="" ng-click="decr()") Subtract
+    %hr
+    %h3 Repeaters
     %ul
         %li(ng-repeat='evnt in events')
             {{evnt.name}} - {{evnt.host}}
